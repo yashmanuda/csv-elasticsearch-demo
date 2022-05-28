@@ -2,7 +2,6 @@
   <configuration default="false" name="ProducerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="com.yashubale.producer.ProducerApplication" />
     <module name="producer" />
-    <option name="PROGRAM_PARAMETERS" value="--filePath csv-files --kafkaBootstrapServers localhost:9092 --topic my-topic" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.yashubale.producer.*" />
