@@ -5,6 +5,9 @@ Before running the code, please run `docker-compose.yml` to spawn the infra. Fol
 - Elasticsearch at `localhost:9200`
 - Kibana at `localhost:5601`
 - Zookeeper at `localhost:2181` (for Kafka)
+- Flink Web UI at `localhost:8081`
+
+####Please make sure all the above ports are free.
 
 ### There are three modules in the repo : 
 - Commons - contains common code 
@@ -20,9 +23,11 @@ Before running the code, please run `docker-compose.yml` to spawn the infra. Fol
 
 ### Notes
 - Kibana can be accessed at `http://localhost:5601/app/dev_tools#/console`
+- Flink web UI can be accessed at `http://localhost:8081/#/job`, you can navigate to `Running Jobs` and check the status of it
 - Topic, servers, index names (no alias as of now), timeouts are hard coded in the code 
 - Have added producer and consumer run configurations which can be directly used
 - Have added dummy csv file `sales-data-100.csv` that contains 100 records
 - This is not a dropwizard or spring application so have not added any `.env` file support
 - With given amount of time everything can be made configurable
 - Keep adding CSV files (assuming with headers) in `csv-files` directory Flink application will read it periodically
+- Very basic flink application is written, without any strong usage of micro-batching, windowing, dedupe, delays etc. 

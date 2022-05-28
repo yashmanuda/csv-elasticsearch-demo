@@ -30,6 +30,7 @@
         <slf4j-simple.version>1.7.36</slf4j-simple.version>
         <elasticsearch-rest-high-level-client.version>7.10.2</elasticsearch-rest-high-level-client.version>
         <jackson-databind.version>2.13.3</jackson-databind.version>
+        <flink-runtime-web.version>1.15.0</flink-runtime-web.version>
     </properties>
 
     <dependencyManagement>
@@ -104,6 +105,12 @@
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson-databind.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-runtime-web</artifactId>
+                <version>${flink-runtime-web.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
