@@ -10,7 +10,115 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>commons</module>
+        <module>consumer</module>
+        <module>producer</module>
     </modules>
+
+    <properties>
+        <flink-csv.version>1.15.0</flink-csv.version>
+        <flink-core.version>1.15.0</flink-core.version>
+        <flink-connector-files.version>1.15.0</flink-connector-files.version>
+        <flink-streaming-java.version>1.15.0</flink-streaming-java.version>
+        <lombok.version>1.18.22</lombok.version>
+        <flink-java.version>1.15.0</flink-java.version>
+        <commons.version>1.0-SNAPSHOT</commons.version>
+        <flink-connector-kafka.version>1.15.0</flink-connector-kafka.version>
+        <flink-clients.version>1.15.0</flink-clients.version>
+        <flink-clients_2.12.version>1.14.4</flink-clients_2.12.version>
+        <flink-streaming-scala_2.11.version>1.14.4</flink-streaming-scala_2.11.version>
+        <flink-clients_2.11.version>1.14.4</flink-clients_2.11.version>
+        <slf4j-simple.version>1.7.36</slf4j-simple.version>
+        <elasticsearch-rest-high-level-client.version>7.10.2</elasticsearch-rest-high-level-client.version>
+        <jackson-databind.version>2.13.3</jackson-databind.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-csv</artifactId>
+                <version>${flink-csv.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-core</artifactId>
+                <version>${flink-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-connector-files</artifactId>
+                <version>${flink-connector-files.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-streaming-java</artifactId>
+                <version>${flink-streaming-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-java</artifactId>
+                <version>${flink-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yashubale</groupId>
+                <artifactId>commons</artifactId>
+                <version>${commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-connector-kafka</artifactId>
+                <version>${flink-connector-kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-clients</artifactId>
+                <version>${flink-clients.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-streaming-scala_2.11</artifactId>
+                <version>${flink-streaming-scala_2.11.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-clients_2.11</artifactId>
+                <version>${flink-clients_2.11.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j-simple.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${elasticsearch-rest-high-level-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-databind.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 
 </project>

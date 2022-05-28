@@ -1,0 +1,54 @@
+{
+  "mappings": {
+    "properties": {
+      "region": {
+        "type": "text"
+      },
+      "country": {
+        "type": "keyword"
+      },
+      "item_type": {
+        "type": "text"
+      },
+      "sales_channel": {
+        "type": "keyword"
+      },
+      "order_priority": {
+        "type": "keyword"
+      },
+      "order_date": {
+        "type": "date",
+        "format": [
+          "dd-MM-yyyy"
+        ]
+      },
+      "order_id": {
+        "type": "long"
+      },
+      "ship_date": {
+        "type": "date",
+        "format": [
+          "dd-MM-yyyy"
+        ]
+      },
+      "units_sold": {
+        "type": "long"
+      },
+      "unit_price": {
+        "type": "double"
+      },
+      "unit_cost": {
+        "type": "double"
+      },
+      "total_revenue": {
+        "type": "double"
+      },
+      "total_cost": {
+        "type": "double"
+      },
+      "total_profit": {
+        "type": "double"
+      }
+    }
+  }
+}
