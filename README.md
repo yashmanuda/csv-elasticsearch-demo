@@ -1,6 +1,6 @@
 # csv-elasticsearch-demo
 
-Before running the code, please run `docker-compose.yml` to spawn the infra. Following things will be exposed once infra is spawned.
+Before running the code, please run `docker compose --file docker-compose.yml up -d` to spawn the infra. Following things will be exposed once infra is spawned.
 - Kafka server at `localhost:9092`
 - Elasticsearch at `localhost:9200`
 - Kibana at `localhost:5601`
